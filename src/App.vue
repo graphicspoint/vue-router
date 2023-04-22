@@ -30,6 +30,9 @@ import Footer from './components/Footer.vue';
               <li class="nav-item">
                 <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
               </li>
+              <li class="nav-item">
+                <RouterLink to="/posts" class="nav-link">Posts</RouterLink>
+              </li>
             </ul>
           </div>
         </div>

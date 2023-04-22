@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue';
 import ServiceView from '../views/ServiceView.vue';
+import PostDetailView from '../views/PostDetailView.vue';
+import PostsView from '../views/PostsView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,9 +27,20 @@ const router = createRouter({
       component: ServiceView
     },
     {
-      paht: '/contact',
+      path: '/contact',
       name: 'contact',
       component: ContactView
+    },
+    {
+      path: '/posts',
+      name: 'posts',
+      component: PostsView
+    },
+    // dynamic route
+    {
+      path: '/posts/:id',
+      name: 'postdetail',
+      component: PostDetailView
     }
   ]
 })
